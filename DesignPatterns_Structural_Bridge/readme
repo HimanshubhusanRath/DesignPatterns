@@ -1,12 +1,18 @@
-Adapter Design Pattern
-------------------------
-Use case : We have a DC electrical device which works on DC power source but currently we don't got only AC power source with us. So, we can not directly charge this
-DC device using AC power source. Hence, we need to prepare an adapter which will convert AC to DC power source.
+Bridge Design Pattern
+----------------------
+* Used to separately maintain two hierarchies which are linked to each other.
 
-How it works:
-* The adapter class instantiates the destination (DC power source) class. So now, adapter class IS-A 'DC power source'.
-* Then the adapter class uses an AC power source object (composition). This is our source class.
-* Now, the adapter class overrides the methods of DC power source and uses the data from AC power source object in this method.
+Use case
+---------
+* Remote is a separate hierarchy and it can grow independently e.g. basic remote, remote with additional capabilities, remote with an LED etc.
+* Device is a separate hierarchy and it can also grow independently e.g. TV, Radio, AC, Cooler etc.
+* A remote is nothing but an abstraction of the controlling capabilities for a device e.g. switing it on/off, volume up/down, temperature up/down etc.
+  but, in real these functionalities are available in the device.
+* So, we can consider remote as an abstraction and the device as the actual implementation here.
 
-
-In this way, data from one interface (AC power) is used for another interface (DC power).
+How bridge pattern is applied here
+-----------------------------------
+* To use bridge pattern here, we can define an interface as REMOTE and another interface as DEVICE.
+* REMOTE will have a reference to DEVICE (composition) and both the hierarchies can grow independent of each other.
+* Client needs to mention the device while defining the remote so that the remote can be used to operate on that particular device.
+* With this, one remote object can be used to operate on multiple devices by simply injecting different device objects.
