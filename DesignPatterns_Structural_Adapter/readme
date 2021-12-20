@@ -1,2 +1,12 @@
-Hello everyone.
-this is regarding adapter pattern
+Adapter Design Pattern
+------------------------
+Use case : We have a DC electrical device which works on DC power source but currently we don't got only AC power source with us. So, we can not directly charge this
+DC device using AC power source. Hence, we need to prepare an adapter which will convert AC to DC power source.
+
+How it works:
+* The adapter class instantiates the destination (DC power source) class. So now, adapter class IS-A 'DC power source'.
+* Then the adapter class uses an AC power source object (composition). This is our source class.
+* Now, the adapter class overrides the methods of DC power source and uses the data from AC power source object in this method.
+
+
+In this way, data from one interface (AC power) is used for another interface (DC power).
