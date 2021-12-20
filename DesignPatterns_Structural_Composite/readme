@@ -1,12 +1,15 @@
-Adapter Design Pattern
+Composite Design Pattern
 ------------------------
-Use case : We have a DC electrical device which works on DC power source but currently we don't got only AC power source with us. So, we can not directly charge this
-DC device using AC power source. Hence, we need to prepare an adapter which will convert AC to DC power source.
 
-How it works:
-* The adapter class instantiates the destination (DC power source) class. So now, adapter class IS-A 'DC power source'.
-* Then the adapter class uses an AC power source object (composition). This is our source class.
-* Now, the adapter class overrides the methods of DC power source and uses the data from AC power source object in this method.
+Use case : 
+----------
+* Class sturucute follows a hierarchial / tree style patterns where all the classes can be considered as originating from one interface (common behavior).
+* In this scenario, there can be leaf classes as well as composite classes (which contains other leaf/composite classes).
+* The objective is to perform some common operation on all the objects persent in this hierarchy where the client does not know the details of the implementaion classes.
 
 
-In this way, data from one interface (AC power) is used for another interface (DC power).
+Example considered here:
+-------------------------
+* We have got a lunch box (composite class) which contains either one/more lunch boxes OR leaf classes (rice/curry) inside it.
+* We are interested in calculating the total price for the box which can be considered as the sum of the product(leaf)'s price and the packing charges 
+  (applicable for the lunch boxes).
