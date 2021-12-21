@@ -1,0 +1,16 @@
+Decorator Design Pattern
+------------------------
+
+Use case : 
+----------
+* Adding new functionalities dynamically to an object by wrapping it by some special objects.
+* e.g. a person can wear a shirt by default. If it gets more cold, he can wear sweaters. If it gets more cooler, he can wear a jacket on top of that. Now if it rains, he can wear a raincoat on top of that. As and when there is a requirement, it can add new features and when not required it can remove the same.
+* The object which is wrapped is not aware of this wrapping.
+
+Example considered here:
+-------------------------
+* We have a requirement to read and write data from/to a file. For this, we have a simple file source class which does this basic operations.
+* Now, we are interested in encrypting the data before writing to the file and decrypting the same after reading from the file. So, we introduced a new wrapper(decorator) which wraps the file operations datasource
+  and performs the encryption/decryption before and after this.
+* Now, we are interested in compressing the data before encrypting and decompressing the same after decrypting the data. So, we introduced another wrapper(decorator) which wraps the encryption/decryption data source and performs the compression/decompression before and after this.
+* The client needs to mention which all features it needs and based on that, it needs to stitch the decorators.
