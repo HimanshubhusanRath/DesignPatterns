@@ -32,7 +32,10 @@ public class TV implements Device{
         System.out.println("Current volume is " + volume + "%");
         System.out.println("------------------------------------\n");
 	}
-	
-	
+
+	@Override
+	public void setVolume(int vol) {
+		this.volume = vol;
+	}
 
 }

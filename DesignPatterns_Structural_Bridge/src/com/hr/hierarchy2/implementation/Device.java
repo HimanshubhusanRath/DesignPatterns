@@ -11,5 +11,7 @@ public interface Device {
 	void decreaseVolume();
 	
 	void showStatus();
+	
+	void setVolume(final int vol);
 
 }

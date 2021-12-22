@@ -11,6 +11,7 @@ public class AdapterClient {
 		DCPowerSource dcPower = new DCPowerSource();
 		DCElectricalDevice dcElectricalDevice = new DCElectricalDevice();
 		// Try to charge the DC electrical device with DC power 
+		System.out.println("--- Charging with DC power ----");
 		dcElectricalDevice.charge(dcPower);
 		
 		// Try to charge the DC electrical device with the AC power with 240 volts
@@ -19,6 +20,7 @@ public class AdapterClient {
 		
 		// Use adapter to solve this issue
 		ACToDCPowerAdapter adapter = new ACToDCPowerAdapter(acPower);
+		System.out.println("\n--- Charging with AC-DC adapter ----");
 		dcElectricalDevice.charge(adapter);
 	}
 }

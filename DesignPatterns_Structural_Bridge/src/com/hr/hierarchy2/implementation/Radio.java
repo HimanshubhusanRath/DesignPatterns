@@ -2,7 +2,7 @@ package com.hr.hierarchy2.implementation;
 
 public class Radio implements Device{
 
-	private int volume = 2;
+	private int volume = 10;
 	private boolean active = false;
 	
 	@Override
@@ -31,5 +31,11 @@ public class Radio implements Device{
         System.out.println("Currently " + (active ? "ON" : "OFF"));
         System.out.println("Current volume is " + volume + "%");
         System.out.println("------------------------------------\n");
+	}
+
+	@Override
+	public void setVolume(int vol) {
+		this.volume = vol;
+		
 	}
 }

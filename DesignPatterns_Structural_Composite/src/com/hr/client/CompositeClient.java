@@ -10,6 +10,26 @@ public class CompositeClient {
 		Rice rice = new Rice();
 		Curry curry = new Curry();
 		
+		/*
+		 * Structure:
+		 * 
+		 * INSIDE-BOX
+		 * [
+		 *   RICE
+		 *   CURRY
+		 *   INSIDE-BOX 
+		 *   [
+		 * 	   RICE,
+		 *     INSIDE-BOX
+		 *     [
+		 *       CURRY
+		 *     ]
+		 *   ]
+		 * ]
+		 * 
+		 * 
+		 */
+		
 		FoodBox finalBox = new FoodBox(
 					rice, 
 					curry,

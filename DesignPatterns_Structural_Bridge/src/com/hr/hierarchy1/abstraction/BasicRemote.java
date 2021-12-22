@@ -4,7 +4,7 @@ import com.hr.hierarchy2.implementation.Device;
 
 public class BasicRemote implements Remote{
 
-	private Device device;
+	protected Device device;
 	
 	public BasicRemote(final Device device)
 	{

@@ -1,5 +1,8 @@
 Decorator Design Pattern
 ------------------------
+* Decorator inherits the wrappee interface because it needs to look like an implementation of that interface.
+* Decorator also refer to the wrappee interface using composition because it needs to delegate the work to the wrappee after doing its own task.
+
 
 Use case : 
 ----------

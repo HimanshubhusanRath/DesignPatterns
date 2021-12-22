@@ -13,7 +13,6 @@ public class PrototypeClient {
 		
 		// clone the bus object
 		Bus bus2 = bus1.cloneIt();
-		System.out.println(bus2);
 		System.out.println("Bus2's hashcode : "+bus2.hashCode());
 		System.out.println(bus2);
 	}

@@ -51,4 +51,5 @@ public class HouseBuildingDirector {
 		builder.setType("2BHK");
 		builder.markLocation();
 	}
+	
 }
