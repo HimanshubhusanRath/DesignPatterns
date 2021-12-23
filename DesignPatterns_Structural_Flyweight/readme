@@ -1,0 +1,7 @@
+Flyweight Design Pattern
+-------------------------
+* Used to separate the intrinsic state (attributes of an object which are constant/do not change over time) from the extrinsic state(attributes which
+  are specific to that object and can be changed over time) of an object so that the intrinsic state can be reused by multiple objects. This intrinsic 
+  state can also be thought as the common part between multiple objects.
+  
+* Used only if there is a limitation of processing memory for the application. 
