@@ -4,4 +4,4 @@ Flyweight Design Pattern
   are specific to that object and can be changed over time) of an object so that the intrinsic state can be reused by multiple objects. This intrinsic 
   state can also be thought as the common part between multiple objects.
   
-* Used only if there is a limitation of processing memory for the application. 
+* Used only if there is a limitation of processing memory for the application.
