@@ -1,0 +1,8 @@
+Mediator Design Pattern
+------------------------
+* Define the individual entities which communicates with each other.
+* Define a mediator containing the references to these individual entities.
+* Add a reference to the mediator from these entity classes as well.
+* The methods defined in the mediator interface ideally invoke the operations of the concerned entities.
+* In this way, using this pattern, an entity invokes the mediator's method and that method invokes the concerned entity's method. 
+* So, the communication happens between two entities in an indirect way (without coupling).
