@@ -1,0 +1,6 @@
+Iterator Design Pattern
+------------------------
+* Define an interface for iterators.
+* Define an interface for collections with a method to create iterator.
+* Each concrete collection will create a concrete iterator.
+* Each iterator will have its own logic of iterating the associated collection.
