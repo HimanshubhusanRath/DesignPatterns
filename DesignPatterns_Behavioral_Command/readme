@@ -1,0 +1,5 @@
+Command Design Pattern
+------------------------
+* Define a class/interface which will represent the base for all types of actions.
+* Define the actions as the implementation of this class.
+* Define a class to whom these actions will be assigned to. Define a method in this class which accepts these actions and executes them.
