@@ -1,0 +1,9 @@
+Memento Design Pattern
+------------------------
+* Three implementations.
+  1. Absolute Memento class for one originator class
+  2. Interface based Memento class for one originator class
+  3. Interface based Memento as well as Originator class
+  
+Refer: https://refactoring.guru/design-patterns/memento
+
