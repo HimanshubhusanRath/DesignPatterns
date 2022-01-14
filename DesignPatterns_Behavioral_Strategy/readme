@@ -1,0 +1,4 @@
+Strategy design pattern
+-----------------------
+* Strategies are specified/choosen by the client.
+* Strategies are not aware of each other.
