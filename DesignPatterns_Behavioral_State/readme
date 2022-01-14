@@ -1,0 +1,5 @@
+State design pattern
+---------------------
+* Different states have individual behaviors.
+* Context behaves differently for different state values.
+* States may be aware of each other and one state can trigger another.
