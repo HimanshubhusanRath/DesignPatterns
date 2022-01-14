@@ -3,7 +3,7 @@ package com.hr.template;
 public abstract class SocialNetwork {
 
 	/* Template Method */
-	public void postMessage(final String message)
+	public final void postMessage(final String message)
 	{
 		System.out.println("\n==== Connect and post message ====");
 		if(login())
