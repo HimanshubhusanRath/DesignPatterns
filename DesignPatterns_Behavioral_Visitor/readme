@@ -1,0 +1,6 @@
+Visitor Design Pattern
+-----------------------
+* Logic to process different types of objects are maintained in one visitor class
+* All these types accept that visitor and internally the logic is invoked.
+* Useful when there is a need to process different objects differently.
+
