@@ -11,11 +11,15 @@ public class GovernmentOfIndia {
 
 	public static GovernmentOfIndia getInstance()
 	{
-		if(instance==null)
+		if(null==instance)
 		{
-			instance = new GovernmentOfIndia();
+			synchronized (instance) {
+				if(instance==null)
+				{
+					instance = new GovernmentOfIndia();
+				}		
+			}
 		}
-		
 		return instance;
 	}
 	
