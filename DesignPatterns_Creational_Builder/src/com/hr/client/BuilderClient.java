@@ -14,21 +14,21 @@ public class BuilderClient {
 		// Create a 1BHK at village (rural area)
 		RuralHouseBuilder ruralBuilder = new RuralHouseBuilder();
 		director.build1bhk(ruralBuilder);
-		System.out.println(ruralBuilder.getTheHouse());
+		System.out.println(ruralBuilder.build());
 		// Create a 1BHK at city (urban area)
 		UrbanHouseBuilder urbanBuilder = new UrbanHouseBuilder();
 		director.build1bhk(urbanBuilder);
-		System.out.println(urbanBuilder.getTheHouse());
+		System.out.println(urbanBuilder.build());
 		
 		/*
 		 * Build 2 bhk using different builders
 		 */
 		// Create a 2BHK at village (rural area)
 		director.build2bhk(ruralBuilder);
-		System.out.println(ruralBuilder.getTheHouse());
+		System.out.println(ruralBuilder.build());
 		// Create a 2BHK at city (urban area)
 		director.build2bhk(urbanBuilder);
-		System.out.println(urbanBuilder.getTheHouse());
+		System.out.println(urbanBuilder.build());
 		
 	}
 }

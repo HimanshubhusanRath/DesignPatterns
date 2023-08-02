@@ -15,5 +15,5 @@ public interface Builder {
 	
 	void setType(final String type);
 	void markLocation();
-	House getTheHouse();
+	House build();
 }
